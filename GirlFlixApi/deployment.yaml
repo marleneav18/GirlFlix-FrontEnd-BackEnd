@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: girlflix-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: girlflix
+  template:
+    metadata:
+      labels:
+        app: girlflix
+    spec:
+      containers:
+        - name: girlflix-container
+          image: <tu-usuario>/girlflix:latest
+          ports:
+            - containerPort: 80
