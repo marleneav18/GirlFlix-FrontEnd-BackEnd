@@ -1,0 +1,7 @@
+button.active {
+    background-color: #ff4081 !important;
+    color: white !important;
+    border: 1px solid #ff4081;
+    font-weight: bold;
+}
+  

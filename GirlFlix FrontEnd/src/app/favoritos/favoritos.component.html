@@ -1,0 +1,9 @@
+<div class="container mt-4">
+    <h2 class="mb-4" style="font-family: 'Reboto', serif; font-size: 2rem;"><strong>Mis Favoritos</strong></h2>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 mb-4" *ngFor="let peli of favoritos">
+        <app-tarjeta-pelicula [pelicula]="peli"></app-tarjeta-pelicula>
+      </div>
+    </div>
+  </div>
+  
